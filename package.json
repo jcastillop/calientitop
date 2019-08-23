@@ -2,7 +2,9 @@
   "name": "calientitop",
   "description": "sistema de ventas",
   "author": "jorge.castillo.pe@gmail.com",
-  "build": {"appId": "calientitop.solucionesop.com"},
+  "build": {
+    "appId": "calientitop.solucionesop.com"
+  },
   "main": "public/electron.js",
   "homepage": "./",
   "version": "0.1.0",
@@ -15,6 +17,7 @@
     "electron-is-dev": "^1.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
     "wait-on": "^3.3.0"
   },
