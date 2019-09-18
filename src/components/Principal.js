@@ -1,16 +1,13 @@
 import React from "react";
 
-class Principal extends React.Component {
+function Principal(){
 
-    render(){
-
-        //const cachedHits = localStorage.getItem('myValueInLocalStorage');
-        //console.log(cachedHits)
-
-
-
-        return <h1>Usuario</h1>
+    if(localStorage.getItem('token')){
+        return (<h1>Usuario</h1>)
+    }else{
+        return(null)
     }
-};
+    
+}
   
 export default Principal;
