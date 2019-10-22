@@ -1,17 +1,23 @@
 import React from 'react'
 import Login from './components/login/index'
-import Principal from './components/Principal'
+import Principal from './components/principal/page'
+import history from './components/utils/history'
+import Todo from './components/todo'
 
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Router, Switch, Route } from "react-router-dom";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
     return(
-        <BrowserRouter>
+        //<Todo />
+        <Router history={history}>
             <Login />
             <Switch>
-                <Route exact path="/principal"  component={Principal}></Route>
+                <Route exact path="/principal"  component={Principal} />
             </Switch>
-        </BrowserRouter>
+        </Router>
+        
     )
 }
 

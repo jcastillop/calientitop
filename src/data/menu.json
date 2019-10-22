@@ -1,0 +1,55 @@
+[
+    {
+        "key": 1,
+        "nombre": "Inicio",
+        "descripcion": "Muestra un dashboard de la actual tienda"
+    },{
+        "key": 2,
+        "nombre": "Ventas",
+        "descripcion": "Permite realizar la venta de los articulos"
+    },{
+        "key": 3,
+        "nombre": "Articulos",
+        "descripcion": "Permite realizar la administración de los articulos",
+        "subItems": [
+            {
+                "nombre":"Lista de articulos",
+                "descripcion": "Muestra el listado de articulos"
+            },{
+                "nombre":"Categorías",
+                "descripcion": "Permite el mantenimiento de las categorías existentes"
+            },{
+                "nombre":"Modificadores",
+                "descripcion":"Permite modificar el precio del articulo incrementandolo "
+            },{
+                "nombre":"Descuentos",
+                "descripcion": "Pemite añadir descuentos a los productos"
+            }
+        ]
+    },{
+        "key": 4,
+        "nombre": "Inventario",
+        "descripcion":"Permite registrar el inventario de los artículos"
+    },{
+        "key": 5,
+        "nombre": "Empleados",
+        "descripcion": "Listado de empleados y sus permisos de acceso",
+        "subItems": [
+            {
+                "nombre": "Listado",
+                "descripcion": "Listado de empleados para su mantenimiento"
+            },{
+                "nombre": "Accesos",
+                "descripcion": "Configuracion de permisos de acceso"
+            }
+        ]
+    },{
+        "key": 6,
+        "nombre": "Clientes",
+        "descripcion": "Listado de clientes"
+    },{
+        "key": 7,
+        "nombre":"Configuracion",
+        "descripcion": "Configuraciones"
+    }
+]
