@@ -1,6 +1,7 @@
 import React from 'react';
 import InputForm from '../inputForm/index';
 import "./styles.css";
+import { Button } from 'react-bootstrap';
 
 const Page = ({ name, password, handleInputChange, handleSubmit }) => (
     <div>
@@ -24,7 +25,7 @@ const Page = ({ name, password, handleInputChange, handleSubmit }) => (
                 onChange = { handleInputChange }
                 />
             </div>                
-            <button className="btn btn-default" id="btn-login" type="submit" value="Submit">Login</button>
+            <Button className="btn btn-default" variant="primary" id="btn-login" type="submit" value="Submit">Login</Button>
         </form>
     </div>
 )

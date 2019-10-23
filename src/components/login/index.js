@@ -4,6 +4,7 @@ import useSignUpForm from '../hooks/useForm';
 import { withRouter } from 'react-router-dom';
 import Logout from '../../components/logout/index';
 import history from '../../components/utils/history';
+import SideBar from "../sidebar/index"
 
 function Login(){
 
@@ -12,7 +13,7 @@ function Login(){
     const signup = () => {
         setLogOn(true)
         localStorage.setItem('token', '12345678')
-        history.push("/principal")
+        history.push("/Principal")
     }   
 
     const logout = () => {
@@ -25,7 +26,11 @@ function Login(){
     if(logOn || localStorage.getItem('token')){
 
         return (
+            <div id="app-body">
+                <SideBar />
                 <Logout logout = { logout }/>
+            </div>
+                
           );
           
     }else{
